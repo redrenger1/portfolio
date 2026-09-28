@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Salisu Sulaiman Idris — Portfolio</title>
+<meta name="description" content="Portfolio of Salisu Sulaiman Idris — full-stack developer." />
+<!-- <link rel="icon" href="favicon.ico" /> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="navbar">
+  <div class="container navbar-inner">
+    <a href="#" class="logo">SSI</a>
+
+    <div class="nav-links">
+      <a href="#about"><span class="accent">01.</span> About</a>
+      <a href="#skills"><span class="accent">02.</span> Skills</a>
+      <a href="#projects"><span class="accent">03.</span> Projects</a>
+      <a href="#contact"><span class="accent">04.</span> Contact</a>
+      <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">Resume</a>
+    </div>
+
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+      <svg id="icon-menu" viewBox="0 0 24 24" width="24" height="24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg id="icon-close" viewBox="0 0 24 24" width="24" height="24" style="display:none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#about"><span class="accent">01.</span> About</a>
+    <a href="#skills"><span class="accent">02.</span> Skills</a>
+    <a href="#projects"><span class="accent">03.</span> Projects</a>
+    <a href="#contact"><span class="accent">04.</span> Contact</a>
+    <a href="Resume.pdf" class="btn-outline" download>Resume</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="container hero-inner">
+    <p class="fade-in" style="animation-delay:.2s">Hi, my name is</p>
+    <h1 class="slide-up" style="animation-delay:.3s">Salisu Sulaiman Idris.</h1>
+    <h2 class="slide-up" style="animation-delay:.4s">I build solutions to your problems and bring inovations to life.</h2>
+    <p class="hero-desc slide-up" style="animation-delay:.5s">
+      <!-- PLACEHOLDER: replace with your own one-line pitch -->
+      I'm a software engineer and full-stack developer specializing in building exceptional digital experiences.
+      Currently focused on creating accessible, human-centered products that make a difference.
+    </p>
+
+    <div class="hero-cta slide-up" style="animation-delay:.6s">
+      <a href="#projects" class="btn-primary">
+        View My Work
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn-outline btn-outline-lg">Get In Touch</a>
+    </div>
+
+    <div class="hero-social fade-in" style="animation-delay:.8s">
+      <!-- PLACEHOLDER: swap these hrefs for your real profiles -->
+      <a href="https://github.com/redrenger1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.44-2.2 2.97V21h-4V9Z"/></svg>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saisusulaimanidris@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-wrap">
+      <h2 class="section-title reveal"><span class="accent mono">01.</span> About Me <span class="line"></span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <!-- PLACEHOLDER: your real bio -->
+          <p>
+            Hello! I'm Engr. Salisu, a passionate software engineer and full-stack developer who enjoys creating things that live
+            on the internet  whether that's websites, applications, or anything in between.
+            My goal is to always build products that provide pixel-perfect, performant experiences.
+          </p>
+          <p>
+            I graduated from <span class="accent">Nigerian Army University Biu</span> with a
+            degree in Software Engineering, and I've had the privilege of working on projects
+            that solve real problems. Currently, I'm focused on building accessible,
+            inclusive products.
+          </p>
+          <p>Here are a few technologies I've been working with recently:</p>
+
+          <ul class="tech-list">
+            <li><span class="accent">▹</span> JavaScript </li>
+            <li><span class="accent">▹</span> HTML5 &amp; CSS3</li>
+            <li><span class="accent">▹</span> React</li>
+            <li><span class="accent">▹</span> Node.js</li>
+            <li><span class="accent">▹</span> Git &amp; GitHub</li>
+            <li><span class="accent">▹</span> SQL</li>
+            <li><span class="accent">▹</span> Python</li>
+            <li><span class="accent">▹</span> PHP</li>
+            <li><span class="accent">▹</span> Laravel </li>
+            <li><span class="accent">▹</span> Django</li>
+          </ul>
+        </div>
+
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo">
+            <div class="about-photo-inner">
+              <span><img src="mm.jpeg" alt="Engr. Salisu Sulaiman Idris"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-wrap">
+      <h2 class="section-title section-title-center reveal">
+        <span class="line"></span>
+        <span><span class="accent mono">02.</span> Skills &amp; Expertise</span>
+        <span class="line"></span>
+      </h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal" style="transition-delay:0ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, performant web interfaces with modern, standards-based tools.</p>
+          <div class="tag-row">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">React</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:80ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Backend Development</h3>
+          <p>Creating robust APIs and server-side solutions that scale.</p>
+          <div class="tag-row">
+            <span class="tag">PHP</span><span class="tag">Django</span><span class="tag">LARAVEL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:160ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><ellipse cx="12" cy="5" rx="8" ry="3" stroke="currentColor" stroke-width="2"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Database Design</h3>
+          <p>Designing efficient schemas and writing optimized queries.</p>
+          <div class="tag-row">
+            <span class="tag">MySQL</span><span class="tag"></span><span class="tag">sqlite3</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:240ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><rect x="6" y="2" width="12" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Mobile-Friendly Design</h3>
+          <p>Crafting layouts that work seamlessly across every screen size.</p>
+          <div class="tag-row">
+            <span class="tag">Responsive CSS</span><span class="tag">Flexbox</span><span class="tag">Grid</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:320ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Performance</h3>
+          <p>Optimizing sites for speed, accessibility, and efficiency.</p>
+          <div class="tag-row">
+            <span class="tag">Lazy Loading</span><span class="tag">Caching</span><span class="tag">SEO</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:400ms">
+          <svg class="skill-icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="m8 6-6 6 6 6M16 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Tools &amp; Workflow</h3>
+          <p>Automating and streamlining the way I build and ship code.</p>
+          <div class="tag-row">
+            <span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-wrap">
+      <h2 class="section-title reveal"><span class="accent mono">03.</span> Some Things I've Built <span class="line"></span></h2>
+
+      <!-- Featured Projects -->
+      <div class="featured-projects">
+
+        <!-- PLACEHOLDER PROJECT 1 -->
+        <div class="featured-project reveal">
+          <div class="featured-image">
+            <div class="featured-image-bg"><span><img src="project1.png" alt="ATCRMS PROJECT PICTURE" srcset=""></span></div>
+          </div>
+          <div class="featured-info">
+            <p class="featured-label">Featured Project</p>
+            <h3><a href="https://github.com/redrenger1/ATCRMS" target="_blank" rel="noopener noreferrer">AI-Based Automated Tax Compliance and Revenue Monitoring System</a></h3>
+            <div class="featured-desc">
+              <p>A web-based Nigerian tax compliance and revenue monitoring system that automates tax calculations, monitor revenue, employee managements, automate PAYE computation and tax payment.
+                It also provide AI-based  revenue forecasting using linear regression.</p>
+            </div>
+            <ul class="featured-tech">
+              <li>Tech</li><li>Stack</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>For the AI Linear regression.</li>
+            </ul>
+            <div class="featured-links">
+              <a href="https://github.com/redrenger1/ATCRMS" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M14 4h6v6M10 14 20 4M18 14v6H4V6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER PROJECT 2 -->
+        <div class="featured-project reverse reveal">
+          <div class="featured-image">
+            <div class="featured-image-bg"><span><img src="student.png" alt="" srcset=""></span></div>
+          </div>
+          <div class="featured-info">
+            <p class="featured-label">Featured Project</p>
+            <h3><a href="#" target="_blank" rel="noopener noreferrer">Student Management System.</a></h3>
+            <div class="featured-desc">
+              <p>A web-based student management system designed for a client to help his educational institution manage students, teachers, classes, annoucements, and academic records through a centralized platform.</p>
+            </div>
+            <ul class="featured-tech">
+              <li>Bootsrap</li><li>Javascript</li><li>PHP</li><li>Mysql</li><li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="featured-links">
+              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M14 4h6v6M10 14 20 4M18 14v6H4V6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER PROJECT 3 -->
+        <div class="featured-project reverse reveal">
+          <div class="featured-image">
+            <div class="featured-image-bg"><span><img src="aitest.png" alt="" srcset=""></span></div>
+          </div>
+          <div class="featured-info">
+            <p class="featured-label">Featured Project</p>
+            <h3><a href="https://github.com/redrenger1/AI-DRIVEN-TEST-CASE-PRIORITIZATION-" target="_blank" rel="noopener noreferrer">AI-DRIVEN-TEST-CASE-PRIORITIZATION FOR LINEAR REGRATION TESTING</a></h3>
+            <div class="featured-desc">
+              <p>An AI-powered software testing solution designed to intelligently prioritize test cases during linear regression testing. The system utilizes machine learning algorithms to analyze historical test execution data and identify which test cases should be executed first, helping reduce testing time and allowing developers to detect high-priority failures earlier and improve efficiency.</p>
+            </div>
+            <ul class="featured-tech">
+              <li>Python</li><li>Machine Learning</li><li>Regression Testing</li><li>pandas</li><li>NumPy</li><li>HTML/CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="featured-links">
+              <a href="https://github.com/redrenger1/AI-DRIVEN-TEST-CASE-PRIORITIZATION-" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live site"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M14 4h6v6M10 14 20 4M18 14v6H4V6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Other Projects -->
+      <!-- <div>
+        <h3 class="other-title reveal">Other Noteworthy Projects</h3>
+        <div class="other-grid">
+
+          <div class="other-card reveal" style="transition-delay:0ms">
+            <div class="other-top">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" class="skill-icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" stroke="currentColor" stroke-width="2"/></svg>
+              <div class="other-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              </div>
+            </div>
+            <h4>Small Project One</h4>
+            <p>One or two sentences describing this project.</p>
+            <ul class="other-tech"><li>Tech</li><li>Stack</li></ul>
+          </div>
+
+          <div class="other-card reveal" style="transition-delay:80ms">
+            <div class="other-top">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" class="skill-icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" stroke="currentColor" stroke-width="2"/></svg>
+              <div class="other-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              </div>
+            </div>
+            <h4>Small Project Two</h4>
+            <p>One or two sentences describing this project.</p>
+            <ul class="other-tech"><li>Tech</li><li>Stack</li></ul>
+          </div>
+
+          <div class="other-card reveal" style="transition-delay:160ms">
+            <div class="other-top">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" class="skill-icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" stroke="currentColor" stroke-width="2"/></svg>
+              <div class="other-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+              </div>
+            </div>
+            <h4>Small Project Three</h4>
+            <p>One or two sentences describing this project.</p>
+            <ul class="other-tech"><li>Tech</li><li>Stack</li></ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <p class="contact-eyebrow">04. What's Next?</p>
+      <h2 class="contact-title">Get In Touch</h2>
+      <p class="contact-desc">
+        I'm currently looking for new opportunities. Whether you have a question
+        or just want to say hi, I'll try my best to get back to you!
+      </p>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saisusulaimanidris@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-outline btn-outline-lg contact-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        Say Hello
+      </a>
+
+      <div class="contact-details">
+        <div><svg viewBox="0 0 24 24" width="20" height="20" fill="none" class="accent-icon"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg> <span>Bauchi State, Nigeria</span></div>
+        <div><svg viewBox="0 0 24 24" width="20" height="20" fill="none" class="accent-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2"/></svg> <span><a href="tel:+234813336354">+234 813 336 354</a></span></div>
+        <div><svg viewBox="0 0 24 24" width="20" height="20" fill="none" class="accent-icon"><path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" fill="none"/></svg> <span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saisusulaimanidris@gmail.com" target="_blank" rel="noopener noreferrer">saisusulaimanidris@gmail.com</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://github.com/redrenger1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <!-- <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.44-2.2 2.97V21h-4V9Z"/></svg></a> -->
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1c.5 1.6 2.1 2.8 3.9 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.6 1.5-1.3 2.1-2.1Z"/></svg></a>
+      </div>
+      <p class="footer-text mono">Designed &amp; Built by Salisu Sulaiman Idris</p>
+      <p class="footer-copy">© <span id="year"></span> All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
